@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
     {% include head.html %}
-    <body>
-      <div class="container-fluid">
+    <body class="bg-all">
+      	<div>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span> 
+						</button>
+						<a class="navbar-brand hidden-xs" href="/">Northwood United Methodist Church</a>
+						<a class="navbar-brand visible-xs" href="/">Northwood UMC</a>
 
-         {{ content }}
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+            {% if page.title == 'Home' %}
+                <li class="active"><a href="/" class="active">Home</a></li>
+            {% else %}
+                <li><a href="/" class="active">Home</a></li>
+            {% endif %}              
+            {% for node in site.pages %}
+                {% if node.group == 'nav' %}
+                    {% if page.url == node.url %}
+                        <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+                    {% else %}
+                        <li><a href="{{node.url}}">{{node.title}}</a></li>
+                    {% endif %}
+                {% endif %}    
+            {% endfor %}         
+            </ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="https://www.facebook.com/pages/Northwood-United-Methodist-Church-Esko-MN/113344768735604"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="http://www.umc.org/"><i class="fa fa-flag"></i></a></li>
+							<li><a href="#"><i class="fa fa-github"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+        	{{ content }}
       
-      </div>
+      	</div>
     </body>
 </html>

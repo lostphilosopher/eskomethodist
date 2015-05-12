@@ -1,37 +1,144 @@
 ---
 layout: default
+title: Home
 ---
-<br />
-<div class="jumbotron">
-	<h1>JEKYLL SITE SKELETON</h1>
-	<div class="row">
-		<div class="col-sm-4">
-			<h2>Posts</h2>
-			<ul>
-		    {% for post in site.posts %}
-		      	<li>
-		          	<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-		      	</li>
-		    {% endfor %}
-			</ul>
-		</div>
-		<div class="col-sm-4">
-			<h2>INCLUDED:</h2>
-			<ul>
-				<li>Jekyll</li>
-				<li>jQuery</li>
-				<li>Bootstrap 3</li>
-				<li>Font Awesome</li>
-			</ul>
-		</div>
-		<div class="col-sm-4">
-			<h2>TESTS:</h2>
-			<ul>
-				<li>If there isn't a big grey background behind this text there is something wrong with the bootstrap installation.</li>
-				<li>If there isn't a check mark here (<i class="fa fa-check"></i>) there is something wrong with the font awesome installation.</li>
-			</ul>
-		</div>	
-	</div>
-</div>
 
-<img src="/assets/lorem-ipsum.jpg" class="img-responsive"/>
+<div class="container-fluid">
+	<div class="row bg-alpha">
+		<div class="jumbotron">
+			<h1 class="text-center">
+				Northwood<br />
+				<small>United Methodist Church in Esko, MN</small>
+			</h1>
+			<h2 class="text-center">
+				Home
+			</h2>
+		</div>
+		<div class="col-lg-3 col-lg-offset-1">
+			<div class="well lead text-center center">
+			<h2>
+				Purpose
+			</h2>				
+			"Do all the good you can, <br />
+			By all the means you can, <br />
+			In all the ways you can, <br />
+			In all the places you can, <br />
+			At all the times you can, <br />
+			To all the people you can, <br />
+			As long as ever you can" 
+            <br />   
+            - John Wesley
+        	</div>
+		</div>
+		<div class="col-lg-7">
+			<img src="/assets/images/church-painting.jpg" class="img-responsive center"/>
+			<br />
+		</div>
+	</div>
+	<div class="row bg-beta">
+		<div class="col-sm-10 col-sm-offset-1">
+			<h2 class="text-center">
+				Vision
+			</h2>
+			<h3 class="text-center">
+				A small church, with a <strong>big</strong> heart.
+			</h3>
+			<p class="lead">
+				An open, welcoming, seven-day-a-week church that shares God's spirit, serves as a community hub and sponsors good works.
+			</p>
+			<blockquote>
+				How lovely is your dwelling place, O Lord Almighty!  
+				<footer class="text-beta"><cite title="Psalm 84:1">Psalm 84:1</cite></footer>
+			</blockquote>
+		</div>
+	</div>
+	<div class="row bg-epsilon">
+		<div class="col-sm-3">
+			<h2>
+				Get in touch
+			</h2>
+		</div>
+		<div class="col-sm-3">
+			<br />
+			<div class="well">
+				<h3>
+					Contact:
+				</h3>
+				<strong>
+					Phone:
+				</strong> 
+				(218) 879 - 0233<br />
+				<br />
+				<strong>
+					Mailing Address:
+				</strong><br />
+				Northwood United Methodist Church<br />
+				P.O. Box 295<br />
+				62 W. Highway 61<br />
+				Esko, Minnesota  55733<br />
+				<br />
+				<strong>
+					Pastor's Phone: 
+				</strong>
+				(218) 464 - 4606<br />
+				<strong> 
+					Pastor's Email:
+				</strong>
+				revgottfried@yahoo.com<br />
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<br />
+			<div class="well">
+				<h3>
+					Social Media:
+				</h3>
+				<a href="https://www.facebook.com/pages/Northwood-United-Methodist-Church-Esko-MN/113344768735604?fref=ts">Facebook</a>
+			</div>
+		</div>	
+		<div class="col-sm-3">
+			<br />
+			<div class="well">
+				<h3 class="text-center">
+					Meet Pastor Gary Gottfried and his wife Eugenie
+				</h3>
+				<img src="/assets/images/gary-and-eugenie.jpg" class="img-responsive center"/>
+			</div>
+			<br />
+		</div>		
+	</div>	
+	<div class="row bg-gamma">
+		<div class="col-md-2 col-sm-offset-1 col-sm-10 col-sm-offset-2">
+			<h2>Location</h2>
+			<p>
+				Please find us at 62 West Highway 61 Esko, Minnesota.  Esko is about halfway between Duluth and Cloquet, Minnesota and can be reached from I-35, taking the exit at mile post marker #242 and heading north onto Thompson Rd.  Turn west at the town's center onto Hwy 61.  Northwood Church is on the south side of the divided highway about 1 mile west of the intersection of Thompson Rd and Hwy 61.
+				<br />
+				<a href="https://www.google.com/maps/place/Northwood+United+Methodist+Church/@46.706381,-92.38109,17z">
+					<Strong>View on Google Maps</strong>
+				</a>
+			</p>
+		</div>
+		<div class="col-sm-8">
+			<div class="hidden-sm hidden-xs">
+				<br />
+				<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+				<div style="overflow:hidden;height:300px;width:700px;" class="center">
+					<div id="gmap_canvas" style="height:300px;width:700px;"></div>
+					<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+				</div>
+				<script type="text/javascript"> function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(46.7070314,-92.36312470000001),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(46.7070314, -92.36312470000001)});infowindow = new google.maps.InfoWindow({content:"<b>Northwood United Methodist Church</b><br/><br/> Esko" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+				</script>
+			</div>
+		</div>
+	</div>
+	<div class="row bg-delta">
+		<div class="col-sm-8 col-sm-offset-2">
+			<h2>
+				Join us on Sunday
+			</h2>
+			<p class="lead">
+				Sunday Worship <strong>9:00 - 10:00 AM</strong>, Fellowship 10:00 - 10:30 AM, and Sunday School for preschool through adult 10:30 - 11:30 AM.  Come just as you are to worship!
+			</p>
+		</div>
+	</div>	
+</div>
