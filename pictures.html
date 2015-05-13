@@ -17,7 +17,7 @@ title: Pictures
 </div>
 
 <script type="text/javascript">
-	var albums = httpGet('http://graph.facebook.com/113344768735604/albums');
+	var albums = facebookHttpGet('http://graph.facebook.com/113344768735604/albums');
 	var result = '';
 	var numColums = 4;
 	var i = 0;
@@ -25,8 +25,7 @@ title: Pictures
 		if (i % numColums == 0) {
 			result = result + "<div class='row'>";
 		}
-
-
+		
 		result = result + 
 				"<div class='col-md-3'>" + 
 					"<div class='well'>" + 
