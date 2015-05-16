@@ -3,8 +3,8 @@ title: Website for Northwood United Methodist Church in Esko Minnesota
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   WWebsite for Northwood United Methodist Church in Esko Minnesota.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://lostphilosopher.github.io/eskomethodist" # the base hostname & protocol for your site
+baseurl: "/eskomethodist" # the subpath of your site, e.g. /blog/
+#url: "http://lostphilosopher.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown

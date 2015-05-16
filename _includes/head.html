@@ -7,20 +7,20 @@
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
     <!-- jQuery (http://jquery.com/) -->
-    <script src="{{ "jquery/jquery-2.1.3.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/jquery/jquery-2.1.3.min.js" | prepend: site.baseurl }}"></script>
     <!-- Bootstrap 3 (http://getbootstrap.com/) -->
-    <link rel="stylesheet" href="{{ "bootstrap/css/bootstrap.min.css" | prepend: site.baseurl }}">
-    <script src="{{ "bootstrap/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+    <link rel="stylesheet" href="{{ "/bootstrap/css/bootstrap.min.css" | prepend: site.baseurl }}">
+    <script src="{{ "/bootstrap/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
     <!-- Font Awesome (http://fortawesome.github.io/Font-Awesome/) -->
-    <link rel="stylesheet" href="{{ "font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
 
 
   	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
     <!-- Project Specific Javascript -->
-    <script src="{{ "assets/javascript/scrapeContent.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ site.baseurl  }}/assets/javascript/scrapeContent.js"></script>
     <!-- Project Specific CSS -->
-    <link rel="stylesheet" href="{{ "assets/css/utility.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "assets/css/eskomethodist-theme.css" | prepend: site.baseurl }}">  
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/utility.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/eskomethodist-theme.css">
 </head>
