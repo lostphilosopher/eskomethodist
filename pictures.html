@@ -11,8 +11,8 @@ title: Pictures
 			<small>United Methodist Church in Esko, MN</small>
 			<br />
 		</h1>
-		<h2 class="text-center">Pictures</h2>
-	</div>	
+        <h2 class="text-center">{{ page.title }}</h2>
+	</div>
 	<div id="js-album"></div>
 </div>
 
@@ -25,23 +25,23 @@ title: Pictures
 		if (i % numColums == 0) {
 			result = result + "<div class='row'>";
 		}
-		
-		result = result + 
-				"<div class='col-md-3'>" + 
-					"<div class='well'>" + 
-						"<h3><a href='" + albums[key].link + "' target='_blank'>" + albums[key].name + "</a></h3>" + 
-						"<br />" + 
-						"<img src='http://graph.facebook.com/" + albums[key].id + "/picture' class='img img-responsive center'/>" + 
-						"<br />" + 
-					"</div>" + 
+
+		result = result +
+				"<div class='col-md-3'>" +
+					"<div class='well'>" +
+						"<h3><a href='" + albums[key].link + "' target='_blank'>" + albums[key].name + "</a></h3>" +
+						"<br />" +
+						"<img src='http://graph.facebook.com/" + albums[key].id + "/picture' class='img img-responsive center'/>" +
+						"<br />" +
+					"</div>" +
 				"</div>";
-		
-		i = i + 1;	
+
+		i = i + 1;
 
 		if (i % numColums == 0) {
 			result = result + "</div>";
 		}
-			
+
 	}
 
 	document.getElementById("js-album").innerHTML = result;
