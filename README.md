@@ -8,13 +8,13 @@ at http://www.northwoodesko.com. If you have any questions about this website pl
 
 ## Developer Notes:
 
-** Philosophy **  
+**Philosophy**  
 
 This site is in intended to require as little maitenance from the chruch staff and the developer as possible. 
 All of the pictures are being pulled from the church's existing Faceook page, as are the events. The bullitens, newsletters, 
 and documents are coming from an [IFTTT](https://ifttt.com/recipes) recipe that pulls them out of a gmail inbox and puts them in a public dropbox folder.
 
-** Connected Accounts **
+**Connected Accounts**
 
 - Facebook  
 - Dropbox  
