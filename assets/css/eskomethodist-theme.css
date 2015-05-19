@@ -1,19 +1,14 @@
 .bg-all {
-	background-color: #F7F4E1;
+	background-color: #F1F1F1;
 }
 .bg-alpha {
-	background-color: #C46234;
+	background-color: #FF0000;
+    color: #FFFFFF;
 }
 .bg-beta {
-	background-color: #FEF6AB;
+	background-color: #000000;
+    color: #FFFFFF;
 }
-.bg-gamma {
-	background-color: #D5E9F4;
-}
-.bg-delta {
-	background-color: #675B55;
-	color: #FFFFFF;
-}
-.bg-epsilon {
-	background-color: #8882B0;
+a, a:hover {
+    color: #FF0000;
 }
