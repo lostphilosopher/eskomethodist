@@ -2,22 +2,29 @@
 layout: default
 group: nav
 title: Pictures
+description: Pictures taken at Northwood United Methodist Church in Esko MN.
 ---
 
 <div class="container-fluid">
-	<div class="jumbotron">
-		<h1 class="text-center">
-			Northwood<br />
-			<small>United Methodist Church in Esko, MN</small>
-			<br />
-		</h1>
-		<h2 class="text-center">Pictures</h2>
-	</div>	
+    <div class="row bg-alpha">
+        <br /><br />
+        <div class="col-sm-10 col-sm-offset-1">
+            <h2>
+                Calendar
+            </h2>
+        </div>
+    </div>
+</div>
+
+<br /><br />
+
+
+<div class="container-fluid">
 	<div id="js-album"></div>
 </div>
 
 <script type="text/javascript">
-	var albums = httpGet('http://graph.facebook.com/113344768735604/albums');
+	var albums = facebookHttpGet('http://graph.facebook.com/113344768735604/albums');
 	var result = '';
 	var numColums = 4;
 	var i = 0;
@@ -26,23 +33,22 @@ title: Pictures
 			result = result + "<div class='row'>";
 		}
 
-
-		result = result + 
-				"<div class='col-md-3'>" + 
-					"<div class='well'>" + 
-						"<h3><a href='" + albums[key].link + "' target='_blank'>" + albums[key].name + "</a></h3>" + 
-						"<br />" + 
-						"<img src='http://graph.facebook.com/" + albums[key].id + "/picture' class='img img-responsive center'/>" + 
-						"<br />" + 
-					"</div>" + 
+		result = result +
+				"<div class='col-md-3'>" +
+					"<div class='well'>" +
+						"<h3><a href='" + albums[key].link + "' target='_blank'>" + albums[key].name + "</a></h3>" +
+						"<br />" +
+						"<img src='http://graph.facebook.com/" + albums[key].id + "/picture' class='img img-responsive center'/>" +
+						"<br />" +
+					"</div>" +
 				"</div>";
-		
-		i = i + 1;	
+
+		i = i + 1;
 
 		if (i % numColums == 0) {
 			result = result + "</div>";
 		}
-			
+
 	}
 
 	document.getElementById("js-album").innerHTML = result;
