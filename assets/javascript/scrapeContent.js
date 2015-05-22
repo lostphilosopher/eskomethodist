@@ -52,6 +52,8 @@ function formatFacebookAlbumsAsTiles(albums)
 			result = result + "</div>";
 		}
   }
+
+  return result;
 }
 
 function httpGetDropboxFiles(url)
