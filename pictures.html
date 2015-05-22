@@ -24,32 +24,10 @@ description: Pictures taken at Northwood United Methodist Church in Esko MN.
 </div>
 
 <script type="text/javascript">
-	var albums = facebookHttpGet('http://graph.facebook.com/113344768735604/albums');
-	var result = '';
-	var numColums = 4;
-	var i = 0;
-	for (key in albums) {
-		if (i % numColums == 0) {
-			result = result + "<div class='row'>";
-		}
-
-		result = result +
-				"<div class='col-md-3'>" +
-					"<div class='well'>" +
-						"<h3><a href='" + albums[key].link + "' target='_blank'>" + albums[key].name + "</a></h3>" +
-						"<br />" +
-						"<img src='http://graph.facebook.com/" + albums[key].id + "/picture' class='img img-responsive center'/>" +
-						"<br />" +
-					"</div>" +
-				"</div>";
-
-		i = i + 1;
-
-		if (i % numColums == 0) {
-			result = result + "</div>";
-		}
-
-	}
+  var url = 'http://graph.facebook.com/113344768735604/albums';
+  
+	var albums = httpGetFacebookAlbums(url);
+	var result = formatFacebookAlbumsAsTiles(albums)
 
 	document.getElementById("js-album").innerHTML = result;
 </script>

@@ -1,12 +1,12 @@
-function facebookHttpGet(url)
+function httpGetFacebookAlbums(url)
 {
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.open( "GET", url, false );
-    xmlHttp.send( null );  
+    xmlHttp.send( null );
     var result = xmlHttp.responseText;
     result = JSON.parse(result);
 
-    var albumNames = result.data; 
+    var albumNames = result.data;
     var albums = {};
     for (index = 0; index < albumNames.length; ++index) {
         if (albumNames[index].type != 'mobile' && albumNames[index].count > 1) {
@@ -22,16 +22,44 @@ function facebookHttpGet(url)
         	albums[name] = albumn;
         }
     }
-    
+
     return albums;
 }
 
-function dropboxHttpGet(url)
+function formatFacebookAlbumsAsTiles(albums)
+{
+  var result = '';
+	var numColums = 4;
+	var i = 0;
+	for (key in albums) {
+		if (i % numColums == 0) {
+			result = result + "<div class='row'>";
+		}
+
+		result = result +
+				"<div class='col-md-3'>" +
+					"<div class='well'>" +
+						"<h3><a href='" + albums[key].link + "' target='_blank'>" + albums[key].name + "</a></h3>" +
+						"<br />" +
+						"<img src='http://graph.facebook.com/" + albums[key].id + "/picture' class='img img-responsive center'/>" +
+						"<br />" +
+					"</div>" +
+				"</div>";
+
+		i = i + 1;
+
+		if (i % numColums == 0) {
+			result = result + "</div>";
+		}
+  }
+}
+
+function httpGetDropboxFiles(url)
 {
     var xmlHttp = new XMLHttpRequest();
 
     xmlHttp.open( "GET", url, false );
-    xmlHttp.send( null );  
+    xmlHttp.send( null );
     var result = xmlHttp.responseText;
 
     result = JSON.parse(result);
@@ -40,7 +68,7 @@ function dropboxHttpGet(url)
     for (index = 0; index < hrefs.length; ++index) {
         var link = hrefs[index].href;
         var title = link.replace('https://www.dropbox.com/sh/g5evgs62hte7169/','');
-        title = title.replace('?dl=0','');  
+        title = title.replace('?dl=0','');
         title = title.substring(title.indexOf('/') + 1);
 
         var doc = {};
@@ -52,15 +80,20 @@ function dropboxHttpGet(url)
         docs[index] = doc;
     }
 
-    string = '';
-    for (index = 0; index < docs.length; ++index) {
-        string = string + 
-            '<div class="row">' +
-                '<div class="col-sm-4 col-sm-offset-4">' + 
-                    '<div class="well"><a href="' + docs[index].link + '" class="lead">' + docs[index].title + '</a></div>' +
-                '</div>' +
-            '</div>';
-    }
+    return docs;
+}
 
-    return string;
+function formatDropboxFilesAsBars(docs)
+{
+  string = '';
+  for (index = 0; index < docs.length; ++index) {
+      string = string +
+          '<div class="row">' +
+              '<div class="col-sm-4 col-sm-offset-4">' +
+                  '<div class="well"><a href="' + docs[index].link + '" class="lead">' + docs[index].title + '</a></div>' +
+              '</div>' +
+          '</div>';
+  }
+
+  return string;
 }
