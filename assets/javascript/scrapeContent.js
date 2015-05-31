@@ -39,7 +39,7 @@ function formatFacebookAlbumsAsTiles(albums)
 		result = result +
 				"<div class='col-md-3'>" +
 					"<div class='well'>" +
-						"<h3><a href='" + albums[key].link + "' target='_blank'>" + albums[key].name + "</a></h3>" +
+						"<h4><a href='" + albums[key].link + "' target='_blank'>" + albums[key].name + "</a></h4>" +
 						"<br />" +
 						"<img src='http://graph.facebook.com/" + albums[key].id + "/picture' class='img img-responsive center'/>" +
 						"<br />" +
