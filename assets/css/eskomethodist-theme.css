@@ -26,7 +26,7 @@
 }
 .bg-fixed-gamma {
 	/*background-color: #F1F1F1;*/
-	background: url('https://scontent-ord1-1.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/67835_113345742068840_4085357_n.jpg?oh=050ff7f04f97fb536fad46dcbb0e1cc7&oe=560093A1') top center no-repeat; 
+	background: url('https://scontent-ord1-1.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/67835_113345742068840_4085357_n.jpg?oh=050ff7f04f97fb536fad46dcbb0e1cc7&oe=560093A1') bottom center no-repeat; 
 	background-attachment: fixed;
 	width: 100%;
 	background-size: 100%;
