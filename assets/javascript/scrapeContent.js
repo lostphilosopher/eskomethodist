@@ -56,62 +56,6 @@ function formatFacebookAlbumsAsTiles(albums)
   return result;
 }
 
-function httpGetFacebookEvents(url)
-{
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", url, false );
-    xmlHttp.send( null );
-    var result = xmlHttp.responseText;
-    result = JSON.parse(result);
-
-    var eventNames = result.data;
-    var events = {};
-    for (index = 0; index < eventNames.length; ++index) {
-        if (eventNames[index].type != 'mobile' && eventNames[index].count > 1) {
-            var album = {};
-            var name = eventNames[index].name;
-            var link =  eventNames[index].link;
-            var id =  eventNames[index].id;
-            events = {
-                id: id,
-                name: name,
-                link: link
-            };
-            events[name] = albumn;
-        }
-    }
-
-    return events;
-}
-
-function formatFacebookEventsAsTiles(events)
-{
-    var result = '';
-    var numColums = 4;
-    var i = 0;
-    for (key in events) {
-        if (i % numColums == 0) {
-            result = result + "<div class='row'>";
-        }
-
-        result = result +
-                "<div class='col-md-3'>" +
-                    "<div class='well'>" +
-                        "<h3><a href='" + events[key].link + "' target='_blank'>" + events[key].name + "</a></h3>" +
-                        "<br />" +
-                    "</div>" +
-                "</div>";
-
-        i = i + 1;
-
-        if (i % numColums == 0) {
-            result = result + "</div>";
-        }
-  }
-
-  return result;
-}
-
 function httpGetDropboxFiles(url)
 {
     var xmlHttp = new XMLHttpRequest();
@@ -147,8 +91,8 @@ function formatDropboxFilesAsBars(docs)
   for (index = 0; index < docs.length; ++index) {
       string = string +
           '<div class="row">' +
-              '<div class="col-sm-4 col-sm-offset-4">' +
-                  '<div class="well"><a href="' + docs[index].link + '" class="lead">' + docs[index].title + '</a></div>' +
+              '<div class="col-sm-8 col-sm-offset-2">' +
+                  '<div class="well"><a href="' + docs[index].link + '" class="lead ellipsis">' + docs[index].title + '</a></div>' +
               '</div>' +
           '</div>';
   }
