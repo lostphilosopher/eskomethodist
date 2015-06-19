@@ -69,7 +69,8 @@ function httpGetDropboxFiles(url)
     var docs = [];
     for (index = 0; index < hrefs.length; ++index) {
         var link = hrefs[index].href;
-        var title = link.replace('https://www.dropbox.com/sh/g5evgs62hte7169/','');
+        // https://www.dropbox.com/sh/t9txk4ueobtgto1/AACFPRv-vbrX2R5wunSxrW8Ya?dl=0
+        var title = link.replace('https://www.dropbox.com/sh/t9txk4ueobtgto1/AACFPRv-vbrX2R5wunSxrW8Ya/','');
         title = title.replace('?dl=0','');
         title = title.substring(title.indexOf('/') + 1);
 
