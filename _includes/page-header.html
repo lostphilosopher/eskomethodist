@@ -4,7 +4,7 @@
         <div class="col-sm-10 col-sm-offset-1">
         	<div class="visible-md visible-sm">
         		<br /><br /><br />
-        	</div>	
+        	</div>
             <h1>
             	{% if page.title == 'Home' %}
             		Northwood United Methodist Church
@@ -12,7 +12,11 @@
             		{{ page.title }}
             	{% endif %}
             	<small>
-            		{{ page.subTitle}}
+                {% if page.title == 'Highlights' %}
+                  Check the <a href="{{ site.baseurl }}/documents_and_newsletters.html">latest bulletin and newsletter</a> for details on upcoming events.
+                {% else %}
+            		  {{ page.subTitle}}
+                {% endif %}
             	</small>
             </h1>
         </div>
