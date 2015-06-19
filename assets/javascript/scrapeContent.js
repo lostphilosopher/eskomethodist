@@ -6,19 +6,24 @@ function httpGetFacebookAlbums(url)
     var result = xmlHttp.responseText;
     result = JSON.parse(result);
 
+    // You must have a Facebook token in your cookies to access the albums via the graph API
+    if (result.error) {
+      return 0;
+    }
+
     var albumNames = result.data;
     var albums = {};
     for (index = 0; index < albumNames.length; ++index) {
         if (albumNames[index].type != 'mobile' && albumNames[index].count > 1) {
         	var album = {};
-            var name = albumNames[index].name;
-        	var link =  albumNames[index].link;
-            var id =  albumNames[index].id;
-            albumn = {
-                id: id,
-                name: name,
-                link: link
-            };
+          var name = albumNames[index].name;
+        	var link = albumNames[index].link;
+          var id = albumNames[index].id;
+          albumn = {
+            id: id,
+            name: name,
+            link: link
+          };
         	albums[name] = albumn;
         }
     }
@@ -28,6 +33,9 @@ function httpGetFacebookAlbums(url)
 
 function formatFacebookAlbumsAsTiles(albums)
 {
+  if (albums == 0) {
+    return '<div>View the albums on <a href="https://www.facebook.com/pages/Northwood-United-Methodist-Church-Esko-MN/113344768735604?sk=photos_stream&tab=photos_albums">Facebook</a>.</div>'
+  }
   var result = '';
 	var numColums = 4;
 	var i = 0;
