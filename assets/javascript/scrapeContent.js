@@ -34,8 +34,8 @@ function httpGetFacebookAlbums(url)
 function formatFacebookAlbumsAsTiles(albums)
 {
   if (albums == 0) {
-    return '<div class="lead">Sorry, you have to be logged into Facebook to see the albums here ' +
-            'you can still view the albums on ' +
+    return '<div class="lead">Sorry, you have to be logged into Facebook to see the albums here, ' +
+            'but you can still view the albums on ' +
             '<a href="https://www.facebook.com/pages/Northwood-United-Methodist-Church-Esko-MN/113344768735604?sk=photos_stream&tab=photos_albums">Facebook</a>.' +
             '</div>'
   }
