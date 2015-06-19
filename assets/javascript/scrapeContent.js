@@ -34,7 +34,10 @@ function httpGetFacebookAlbums(url)
 function formatFacebookAlbumsAsTiles(albums)
 {
   if (albums == 0) {
-    return '<div class=" col-md-3 lead">View the albums on <a href="https://www.facebook.com/pages/Northwood-United-Methodist-Church-Esko-MN/113344768735604?sk=photos_stream&tab=photos_albums">Facebook</a>.</div>'
+    return '<div class="lead">Sorry, you have to be logged into Facebook to see the albums here
+            you can still view the albums on
+            <a href="https://www.facebook.com/pages/Northwood-United-Methodist-Church-Esko-MN/113344768735604?sk=photos_stream&tab=photos_albums">Facebook</a>.
+            </div>'
   }
   var result = '';
 	var numColums = 4;
