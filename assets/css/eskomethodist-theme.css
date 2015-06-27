@@ -19,21 +19,21 @@
 	background-size: 100%;
 }
 .bg-fixed-beta {
-	background: url('http://www.northwoodesko.com/assets/images/pine_sky.jpg') bottom center no-repeat;
+	background: url('http://www.northwoodesko.com/assets/images/pine_sky.jpg') top center no-repeat;
 	background-color: #FFFFFF;
 	background-attachment: fixed;
 	width: 100%;
 	background-size: 100%;
 }
 .bg-fixed-gamma {
-	background: url('http://www.northwoodesko.com/assets/images/green_trees.jpg') bottom center no-repeat;
+	background: url('http://www.northwoodesko.com/assets/images/green_trees.jpg') top center no-repeat;
 	background-color: #FFFFFF;
 	background-attachment: fixed;
 	width: 100%;
 	background-size: 100%;
 }
 .bg-fixed-delta {
-	background: url('http://www.northwoodesko.com/assets/images/fall_trees.jpg') bottom center no-repeat;
+	background: url('http://www.northwoodesko.com/assets/images/fall_trees.jpg') top center no-repeat;
 	background-color: #FFFFFF;
 	background-attachment: fixed;
 	width: 100%;
