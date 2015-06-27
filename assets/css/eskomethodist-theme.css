@@ -10,6 +10,7 @@
 }
 .bg-all {
 	background-image: url('http://www.northwoodesko.com/assets/images/subtle_white_feathers.png');
+	background-color: #FFFFFF;
 }
 .bg-fixed-alpha {
 	background: url('http://www.northwoodesko.com/assets/images/fall_sky.jpg') top center no-repeat;
@@ -44,15 +45,10 @@
   color: #000000;
 }
 .bg-beta {
-	background-color: #E4F4FA;
+	background-image: url('http://www.northwoodesko.com/assets/images/subtle_white_feathers.png');
+	background-color: #FFFFFF;
 }
-.bg-gamma {
-	/* background-color: #FAF4B1; */
-	background-color: #FCF8D0;
-}
-.bg-delta {
-	background-color: #BCBDD7;
-}
+
 a, a:hover {
     color: #FF0000;
 }
