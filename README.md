@@ -12,10 +12,10 @@ at http://www.northwoodesko.com. If you have any questions about this website pl
 
 This site is intended to require as little maintenance from the church staff and the developer as possible.
 All of the pictures are being pulled from the church's existing Facebook page. The bulletins, newsletters,
-and documents are coming from an [IFTTT](https://ifttt.com/recipes) recipe that pulls them out of a gmail 
-inbox and puts them in a public dropbox folder. [YQL](https://developer.yahoo.com/yql/console/) is then 
+and documents are coming from an [IFTTT](https://ifttt.com/recipes) recipe that pulls them out of a gmail
+inbox and puts them in a public dropbox folder. [YQL](https://developer.yahoo.com/yql/console/) is then
 used to scrape out the contents of the dropbox folder.
-See [this file](https://github.com/lostphilosopher/eskomethodist/blob/master/assets/javascript/scrapeContent.js) 
+See [this file](https://github.com/lostphilosopher/eskomethodist/blob/master/assets/javascript/scrapeContent.js)
 for more information.
 
 **Connected Accounts**
@@ -26,7 +26,7 @@ Under northwoodesko@gmail.com:
 - [IFTTT](https://ifttt.com)  
 Other:  
 - [BlueHost](http://www.bluehost.com/)
-- [Facebook](https://www.facebook.com/pages/Northwood-United-Methodist-Church-Esko-MN/113344768735604) 
+- [Facebook](https://www.facebook.com/pages/Northwood-United-Methodist-Church-Esko-MN/113344768735604)
 
 **Starting a local Jekyll instance**
 
@@ -36,9 +36,11 @@ Other:
 
 3. cd into the repo: ```cd eskomethodist```
 
-4. Test the application by serving it locally: ```jekyll serve```
+4. Test the application by serving it locally: ```jekyll serve --baseurl ''```
 
-5. Verify that you can see your jekyll project running at [localhost:4000/](http://localhost:4000/ "Localhost on port 4000")
+5. Verify that you can see your jekyll project running at [localhost:4000/](http://localhost:4000/ "Localhost on port 4000")  
+
+If the above process doesn't work, try ```bundle exec jekyll serve --baseurl ''``` this might help with versioning and compatibility issues. If you get a ```json 1.7.7``` issue try ```bundle update json``` see [here](http://stackoverflow.com/questions/29578142/how-to-install-json-gem-failed-to-build-gem-native-extensionmac-10-10) for more.  
 
 **Deploying to Production**  
 
