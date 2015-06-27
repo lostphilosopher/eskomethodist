@@ -1,8 +1,8 @@
 ---
 layout: default
-group: nav
+group: 
 title: Pictures
-subTitle: Click an album to view it on Facebook
+subTitle:
 description: Pictures taken at Northwood United Methodist Church in Esko MN.
 ---
 
@@ -12,16 +12,22 @@ description: Pictures taken at Northwood United Methodist Church in Esko MN.
 
 <div class="container">
 	<div id="js-album"></div>
+	<h2>
+		Visit the Northwood United Methodist Church
+		<a href="https://www.facebook.com/pages/Northwood-United-Methodist-Church-Esko-MN/113344768735604" target="_blank">
+			Facebook page
+		</a> to see and add pictures!
+	</h2>
 </div>
 
 <script type="text/javascript">
   // @todo: Solve this problem... http://stackoverflow.com/questions/31058691/workaround-for-accessing-facebook-group-albums-client-side
-  var appId = '375670902628871';
-  var appSecret = '306f136ffceaccffa43df7bc59ab3634';
-  var url = 'https://graph.facebook.com/113344768735604/albums?access_token=' + appId + '|' + appSecret;
-
-	var albums = httpGetFacebookAlbums(url);
-	var result = formatFacebookAlbumsAsTiles(albums);
-
-	document.getElementById("js-album").innerHTML = result;
+  // var appId = '';
+  // var appSecret = '';
+  // var url = 'https://graph.facebook.com/113344768735604/albums?access_token=' + appId + '|' + appSecret;
+	//
+	// var albums = httpGetFacebookAlbums(url);
+	// var result = formatFacebookAlbumsAsTiles(albums);
+	//
+	// document.getElementById("js-album").innerHTML = result;
 </script>
