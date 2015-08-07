@@ -15,8 +15,8 @@ description: Northwood United Methodist Church documents including bulletins and
 
 <script type="text/javascript">
 	// YQL (https://developer.yahoo.com/yql/console/#h=)
-	// YQL = select href from html where url="https://www.dropbox.com/sh/t9txk4ueobtgto1/AACFPRv-vbrX2R5wunSxrW8Ya" and xpath='//*[@id="list-view-container"]/ol/li/div[1]/div/a[contains(@class,"file-link filename-link")]'
-	var url = "https://query.yahooapis.com/v1/public/yql?q=select%20href%20from%20html%20where%20url%3D%22https%3A%2F%2Fwww.dropbox.com%2Fsh%2Ft9txk4ueobtgto1%2FAACFPRv-vbrX2R5wunSxrW8Ya%22%20and%20xpath%3D'%2F%2F*%5B%40id%3D%22list-view-container%22%5D%2Fol%2Fli%2Fdiv%5B1%5D%2Fdiv%2Fa%5Bcontains(%40class%2C%22file-link%20filename-link%22)%5D'&format=json&callback=";
+	// YQL = select href from html where url="https://www.dropbox.com/sh/2749j09hibnzo2y/AAA14dgk_k8J84_Epjgc58BNa?dl=0" and xpath='//*[@id="list-view-container"]/ol/li/div[1]/div/a[contains(@class,"file-link filename-link")]'
+	var url = "https://query.yahooapis.com/v1/public/yql?q=select%20href%20from%20html%20where%20url%3D%22https%3A%2F%2Fwww.dropbox.com%2Fsh%2F2749j09hibnzo2y%2FAAA14dgk_k8J84_Epjgc58BNa%3Fdl%3D0%22%20and%20xpath%3D'%2F%2F*%5B%40id%3D%22list-view-container%22%5D%2Fol%2Fli%2Fdiv%5B1%5D%2Fdiv%2Fa%5Bcontains(%40class%2C%22file-link%20filename-link%22)%5D'&format=json&callback=";
 
 	var docs = httpGetDropboxFiles(url);
   var result = formatDropboxFilesAsBars(docs);
