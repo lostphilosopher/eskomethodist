@@ -9,7 +9,7 @@ body {
 }
 
 .header-banner {
-  background: url('http://localhost:4000/assets/images/church-painting.jpg');
+  background: url('http://www.northwoodesko.com/assets/images/church-painting.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -47,13 +47,13 @@ body {
 
 .bg-image-beta {
 	background-color: #F9FBA7;
-	background: url('http://localhost:4000/assets/images/fall_sky.jpg') top center no-repeat;
+	background: url('http://www.northwoodesko.com/assets/images/fall_sky.jpg') top center no-repeat;
   margin-left: 0px;
   margin-right: 0px;
 }
 .bg-image-gamma {
 	background-color: #F1FBBA;
-	background: url('http://localhost:4000/assets/images/green_trees.jpg') top center no-repeat;
+	background: url('http://www.northwoodesko.com/assets/images/green_trees.jpg') top center no-repeat;
   margin-left: 0px;
   margin-right: 0px;
   width: 100%;
