@@ -1,3 +1,66 @@
+body {
+  background-color: #F1F1F1;
+}
+
+.content {
+  background-color: #F1F1F1;
+	background-image: url('http://www.northwoodesko.com/assets/images/subtle_white_feathers.png');
+  max-width: 1920px;
+}
+
+.header-banner {
+  background: url('http://localhost:4000/assets/images/church-painting.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #6898DD;
+}
+.big-space {
+  height: 350px;
+}
+.header-text {
+  color: #000000;
+  font-size: 44px;
+  padding: 20px 20px 20px 20px;
+  margin-left: 40px;
+  background-color: #F1F1f1;
+  width: 800px;
+	background-image: url('http://www.northwoodesko.com/assets/images/subtle_white_feathers.png');
+  border-radius: 25px;
+}
+.small-header-text {
+  color: #000000;
+  background-color: #F1F1f1;
+	background-image: url('http://www.northwoodesko.com/assets/images/subtle_white_feathers.png');
+}
+.default-background {
+  background-color: #F1F1F1;
+	background-image: url('http://www.northwoodesko.com/assets/images/subtle_white_feathers.png');
+}
+.bg-image-alpha {
+  background-color: #AFC480;
+	background: url('http://www.northwoodesko.com/assets/images/pine_sky.jpg') top center no-repeat;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 40px 40px 40px 40px;
+}
+
+.bg-image-beta {
+	background-color: #F9FBA7;
+	background: url('http://localhost:4000/assets/images/fall_sky.jpg') top center no-repeat;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.bg-image-gamma {
+	background-color: #F1FBBA;
+	background: url('http://localhost:4000/assets/images/green_trees.jpg') top center no-repeat;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+}
+
+
+
 .force-width {
 	width: 1000px;
 }
