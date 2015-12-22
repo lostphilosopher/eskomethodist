@@ -4,147 +4,136 @@ title: Home
 description: Northwood United Methodist Church in Esko MN - A small church with a BIG heart. Join us for worship Sunday morning at 9:00 AM.
 ---
 
-{% include page-header.html %}
-
 <div class="container">
+
+  <br />
+
+  <div class='header-banner hidden-xs hidden-sm hidden-md'>
+    <br />
+    <h1 class='header-text'>
+      Northwood United Methodist Church
+    </h1>
+    <div class='big-space'></div>
+  </div>
+  <div class='hidden-lg'>
+    <img src="assets/images/church-painting.jpg" class="img img-responsive" alt="Painting of Northwood United Methodist Church in Esko MN."/>
+    <h1 class='small-header-text'>
+      Northwood United Methodist Church
+    </h1>
+  </div>
+
+  <br />
+
+  <div class="well">
     <div class="row">
-        <div class="col-sm-5 col-sm-offset-1">
-            <br />
-            <h3>
-                62 West Highway 61 P.O. Box 295<br />
-                Esko, MN 55733
-            </h3>
-            <h3>
-                Pastor Gary Gottfried<br />
-                218.464.1636<br />
-                revgottfried@yahoo.com
-            </h3>
+      <div class="col-sm-3 col-sm-offset-1">
+        <br />
+        <h3>
+            62 West Highway 61 P.O. Box 295<br />
+            Esko, MN 55733
+        </h3>
+        <h3>
+            Pastor Gary Gottfried<br />
+            218.464.1636<br />
+            revgottfried@yahoo.com
+        </h3>
+      </div>
+      <div class="col-sm-7">
+        <div class="hidden-sm hidden-xs">
+          <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+          <div style="overflow:hidden;height:300px;width:500px;" class="center">
+              <div id="gmap_canvas" style="height:300px;width:500px;"></div>
+              <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+          </div>
+          <script type="text/javascript"> function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(46.7063813,-92.38109),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(46.7063813,-92.38109)});infowindow = new google.maps.InfoWindow({content:"<b>Northwood United Methodist Church</b><br/><br/> Esko" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+          </script>
         </div>
-        <div class="col-sm-5 text-center">
-            <br /><br />
-            <img src="assets/images/church-painting.jpg" class="img img-responsive" alt="Painting of Northwood United Methodist Church in Esko MN."/>
-            <br />
-        </div>
+        <br /><br />
+      </div>
     </div>
 
-    <div class="bg-main">
-
-        <div class="bg-fixed-beta">
-            <div class="row bg-alpha">
-                <div class="col-sm-10 col-sm-offset-1">
-                    <h2>
-                        Join us on Sunday
-                    </h2>
-                </div>
-            </div>
-            <div class="row">
-                <br />
-                <div class="col-sm-8 col-sm-offset-2">
-                    <div class="well">
-                        <p class="lead">
-                            <strong>Sunday Worship 9:00 - 10:00 AM</strong><br />
-                            Fellowship 10:00 - 10:30 AM<br />
-                            Sunday School for preschool through adult 10:30 - 11:30 AM<br />
-                            <I>Come just as you are to worship!</I>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row bg-alpha">
-            <div class="col-sm-10 col-sm-offset-1">
-                <h2>
-                    Location
-                </h2>
-            </div>
-        </div>
-        <div class="row bg-beta">
-            <br />
-            <div class="col-md-3 col-sm-offset-1 col-sm-10 col-sm-offset-2">
-                <div class="well">
-                    Please find us at 62 West Highway 61 Esko, Minnesota.  Esko is about halfway between Duluth and Cloquet, Minnesota and can be reached from I-35, taking the exit at mile post marker #242 and heading north onto Thompson Rd.  Turn west at the town's center onto Hwy 61.  Northwood Church is on the south side of the divided highway about 1 mile west of the intersection of Thompson Rd and Hwy 61.
-                    <br />
-                    <a href="https://www.google.com/maps/place/Northwood+United+Methodist+Church/@46.706381,-92.38109,17z">
-                        <br />
-                        <span style="color: #000000; font-weight: bold;">View on </span><img src="assets/images/Google_maps_logo.png" class="img img-responsive" alt="Google Maps Logo links to the location of Northwood United Methodist Church on Google Maps"/>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-7">
-                <div class="hidden-sm hidden-xs">
-                    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-                    <div style="overflow:hidden;height:300px;width:500px;" class="center">
-                        <div id="gmap_canvas" style="height:300px;width:500px;"></div>
-                        <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
-                    </div>
-                    <script type="text/javascript"> function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(46.7063813,-92.38109),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(46.7063813,-92.38109)});infowindow = new google.maps.InfoWindow({content:"<b>Northwood United Methodist Church</b><br/><br/> Esko" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
-                    </script>
-                </div>
-                <br /><br />
-            </div>
-        </div>
-
-    	<div class="row bg-alpha">
-            <div class="col-sm-10 col-sm-offset-1">
-                <h2>
-                    Get in touch
-                </h2>
-            </div>
-        </div>
-        <div class="row bg-beta">
-    		<div class="col-sm-3 col-sm-offset-1">
-    			<br />
-    			<div class="well">
-    				<h3>
-    					Contact:
-    				</h3>
-    				<strong>
-    					Phone:
-    				</strong>
-    				218.879.0233<br />
-    				<br />
-    				<strong>
-    					Mailing Address:
-    				</strong><br />
-    				Northwood United Methodist Church<br />
-    				P.O. Box 295<br />
-    				62 W. Highway 61<br />
-    				Esko, Minnesota  55733<br />
-    				<br />
-    				<strong>
-    					Pastor's Phone:
-    				</strong>
-    				218.464.1636<br />
-    				<strong>
-    					Pastor's Email:
-    				</strong>
-    				revgottfried@yahoo.com<br />
-    			</div>
-    		</div>
-    		<div class="col-sm-3">
-    			<br />
-    			<div class="well">
-    				<h3>
-    					Social Media:
-    				</h3>
-    				<a href="https://www.facebook.com/pages/Northwood-United-Methodist-Church-Esko-MN/113344768735604?fref=ts">
-              <img src="assets/images/FB_FindUsOnFacebook-114.png" alt="Visit the Facebook page for Northwood United Methodist Church in Esko"/>
-            </a>
-    			</div>
-    		</div>
-    		<div class="col-sm-4">
-    			<br />
-    			<div class="well">
-    				<h3 class="text-center">
-    					Pastor Gary Gottfried and his wife Eugenie Davis
-    				</h3>
-    				<img src="assets/images/gary-and-eugenie.jpg" class="img-responsive center" alt="Photo of Pastor Gary Gottfried and his wife Eugenie Davis"/>
-    			</div>
-    			<br />
-    		</div>
-    	</div>
-
+    <div class="row">
+      <div class='col-sm-10 col-sm-offset-1'>
+        <p>
+          Please find us at 62 West Highway 61 Esko, Minnesota.  Esko is about halfway between Duluth and Cloquet, Minnesota and can be reached from I-35, taking the exit at mile post marker #242 and heading north onto Thompson Rd.  Turn west at the town's center onto Hwy 61.  Northwood Church is on the south side of the divided highway about 1 mile west of the intersection of Thompson Rd and Hwy 61.
+        </p>
+      </div>
     </div>
-    <br /><br />
+  </div>
+
+  <div class='row bg-image-alpha'>
+    <div class='col-sm-8 col-sm-offset-2'>
+      <div class="well">
+        <h2>
+            Join us on Sunday
+        </h2>
+        <p class="lead">
+          <strong>Sunday Worship 9:00 - 10:00 AM</strong><br />
+          Fellowship 10:00 - 10:30 AM<br />
+          Sunday School for preschool through adult 10:30 - 11:30 AM<br />
+          <I>Come just as you are to worship!</I>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <br />
+
+  <div class='row'>
+    <div class='col-sm-4'>
+      <div class='well'>
+        <h3>
+          Contact:
+        </h3>
+        <strong>
+          Phone:
+        </strong>
+        218.879.0233<br />
+        <br />
+        <strong>
+          Mailing Address:
+        </strong><br />
+        Northwood United Methodist Church<br />
+        P.O. Box 295<br />
+        62 W. Highway 61<br />
+        Esko, Minnesota  55733<br />
+        <br />
+        <strong>
+          Pastor's Phone:
+        </strong>
+        218.464.1636<br />
+        <strong>
+          Pastor's Email:
+        </strong>
+        revgottfried@yahoo.com
+        <br />
+      </div>
+    </div>
+    <div class='col-sm-4'>
+      <div class='well'>
+        <h3>
+          Social Media:
+        </h3>
+        <a href="https://www.facebook.com/pages/northwood-united-methodist-church-esko-mn/113344768735604?fref=ts">
+          <img src="assets/images/fb_findusonfacebook-114.png" alt="visit the facebook page for northwood united methodist church in esko"/>
+        </a>
+      </div>
+    </div>
+    <div class='col-sm-4'>
+      <div class='well'>
+        <h3 class="text-center">
+          Pastor Gary Gottfried and his wife Eugenie Davis
+        </h3>
+        <img src="assets/images/gary-and-eugenie.jpg" class="img-responsive center" alt="Photo of Pastor Gary Gottfried and his wife Eugenie Davis"/>
+      </div>
+    </div>
+  </div>
+
+  <div class='row'>
+    <div class='col-sm-12'>
+      <div class='center'>
+			  <img src="assets/images/methodist_logo.gif" class="img img-responsive center" alt="Logo of the United Methodist Church"/>
+      </div>
+    </div>
+  </div>
 </div>
