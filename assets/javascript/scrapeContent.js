@@ -76,6 +76,10 @@ function httpGetDropboxFiles(url)
     var result = xmlHttp.responseText;
 
     result = JSON.parse(result);
+    if (!result.query.results) {
+      return;
+    }
+
     var hrefs = result.query.results.a;
     var docs = [];
     for (index = 0; index < hrefs.length; ++index) {
@@ -97,7 +101,7 @@ function httpGetDropboxFiles(url)
     return docs;
 }
 
-function formatDropboxFilesAsBars(docs)
+function formatDropboxFilesAsBars(docs = [])
 {
   string = '';
   for (index = 0; index < docs.length; ++index) {
