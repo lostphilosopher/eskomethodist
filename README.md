@@ -6,6 +6,8 @@
 This site is powered by [Jekyll](http://jekyllrb.com/) and hosted through [GitHub pages](https://pages.github.com/)
 at http://www.northwoodesko.com. If you have any questions about this website please contact wandersen02@gmail.com.
 
+The look is based on ["Business Casual by Start Bootstrap"](https://startbootstrap.com/template-overviews/business-casual/).
+
 ## Developer Notes:
 
 **Philosophy**  
@@ -36,7 +38,7 @@ Other:
 
 3. cd into the repo: ```cd eskomethodist```
 
-4. Test the application by serving it locally: ```jekyll serve --baseurl ''```
+4. Test the application by serving it locally: ```jekyll serve```
 
 5. Verify that you can see your jekyll project running at [localhost:4000/](http://localhost:4000/ "Localhost on port 4000")  
 
@@ -48,4 +50,4 @@ If the above process doesn't work, try ```bundle exec jekyll serve --baseurl ''`
 
 2. Checkout the gh-pages branch: ```git checkout gh-pages```
 
-3. Push directly to the gh-pages branch ```git push origin gh-pages```
+3. Push directly to the gh-pages branch ```git push origin gh-pages`` (or merge a commit into gh-pages on GitHub)`
